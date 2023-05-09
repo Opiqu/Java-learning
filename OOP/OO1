@@ -1,0 +1,18 @@
+class  Clothes{  //一個衣服的類別(注意class位置與staic的關係)
+    String color;
+    char size;
+}
+public class OO1 {
+
+    public static void main(String[] args) {
+
+        Clothes c1;//建立C1變數
+        c1 = new Clothes();//C1參考至新物件
+
+        Clothes c2 = new Clothes();
+        var c3 = new Clothes();//Clothes 重複編譯器能猜出
+        c1.color = "red";
+        c1.size = 'M';
+        System.out.println("Color: " +c1.color+" Size: "+c1.size );
+    }
+}
